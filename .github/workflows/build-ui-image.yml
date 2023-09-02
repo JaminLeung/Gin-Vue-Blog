@@ -55,5 +55,5 @@ jobs:
           file: ./src/deploy/build/web/Dockerfile
           push: true
           tags: |
-            ${{ vars.DOCKER_REGISTRY }}/${{ vars.DOCKER_NAMESPACE }}/demo-ruoyi-web:${{ github.sha }}
-            ${{ vars.DOCKER_REGISTRY }}/${{ vars.DOCKER_NAMESPACE }}/demo-ruoyi-web:latest
+            ${{ vars.DOCKER_REGISTRY }}/${{ vars.DOCKER_NAMESPACE }}/demo-gvb-web:${{ github.sha }}
+            ${{ vars.DOCKER_REGISTRY }}/${{ vars.DOCKER_NAMESPACE }}/demo-gvb-web:latest
