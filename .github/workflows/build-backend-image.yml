@@ -40,8 +40,8 @@ jobs:
       - name: Build and push server-demo images
         uses: docker/build-push-action@v3.3.1
         with:
-          context: ./src/deploy/build/mysql
-          file: ./src/deploy/build/mysql/Dockerfile
+          context: ./src/gin-blog-server
+          file: ./src/gin-blog-server/Dockerfile
           push: true
           tags: |
             ${{ vars.DOCKER_REGISTRY }}/${{ vars.DOCKER_NAMESPACE }}/demo-gvb-server:${{ github.sha }}
