@@ -49,6 +49,7 @@ jobs:
         run: |
           rm -rf ./src/deploy/build/web/html/*
           cp -rf  ./src/gin-blog-front/dist ./src/deploy/build/web/html/blog
+          cp -rf  ./src/gin-blog-admin/dist ./src/deploy/build/web/html/blog
           cp -rf  ./src/gin-blog-admin/dist ./src/deploy/build/web/html/admin
 
 
