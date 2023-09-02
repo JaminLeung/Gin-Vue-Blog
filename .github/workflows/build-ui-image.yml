@@ -32,16 +32,17 @@ jobs:
         run: |
           # export NODE_OPTIONS=--openssl-legacy-provider
           cd ./src/gin-blog-admin
+          npm install pnpm --registry=https://registry.npmmirror.com
           npm install --registry=https://registry.npmmirror.com #安装依赖
-          npm install pnpm
           pnpm build #执行前端打包
         
       - name: Build blog with NPM
         run: |
           # export NODE_OPTIONS=--openssl-legacy-provider
           cd ./src/gin-blog-front
+          npm install pnpm --registry=https://registry.npmmirror.com
           npm install --registry=https://registry.npmmirror.com #安装依赖
-          npm install pnpm
+          
           pnpm build #执行前端打包
 
       - name: Copy dist to folder
